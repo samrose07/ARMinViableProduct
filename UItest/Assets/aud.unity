@@ -780,7 +780,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 480668731}
-  - component: {fileID: 480668732}
   - component: {fileID: 480668733}
   m_Layer: 0
   m_Name: menuScroller
@@ -788,7 +787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &480668731
 RectTransform:
   m_ObjectHideFlags: 0
@@ -809,17 +808,6 @@ RectTransform:
   m_AnchoredPosition: {x: -1229, y: 84}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &480668732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 480668730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45512714d1d1b224584b47911b23637e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &480668733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1355,7 +1343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1038030573
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1847,7 +1835,7 @@ GameObject:
   - component: {fileID: 1609805785}
   - component: {fileID: 1609805787}
   m_Layer: 0
-  m_Name: uat
+  m_Name: audio holder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1957,12 +1945,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85cc8b6d4222f134dab5572638342f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aSource: {fileID: 1609805785}
+  aSource: {fileID: 0}
+  audio1: {fileID: 8300000, guid: 46c6f9a247e84c0409f6e534399cd3e7, type: 3}
+  audio2: {fileID: 8300000, guid: 2c61c2ef3963cc240a066fe3b6d96fa7, type: 3}
+  audio3: {fileID: 8300000, guid: 9da9fa4b520772b4ca8c7feee96e3470, type: 3}
+  audio4: {fileID: 8300000, guid: e72eaf749c76c63439ad9d466aecb133, type: 3}
+  audio5: {fileID: 8300000, guid: bc719133eacad8f4b850a0f7824a3799, type: 3}
+  audio6: {fileID: 8300000, guid: 508b7a61996783847b0a4cd86b54bf3f, type: 3}
+  audio7: {fileID: 8300000, guid: ede80f56ade020842950bcd17f26792d, type: 3}
   txt: {fileID: 1954819492}
-  img: {fileID: 2800000, guid: bc6a652c4440f8f4b8e211f4e7f748e5, type: 3}
-  img2: {fileID: 2800000, guid: 464e44a5935a5584f878fded16b63d44, type: 3}
-  img3: {fileID: 2800000, guid: 8e8796c9b9045a64b953dab234d0025d, type: 3}
+  img: {fileID: 2800000, guid: 19822d62d630ce144977ec067d7646ff, type: 3}
+  img2: {fileID: 2800000, guid: 7e1467f2183407e47ab7cd2d52c05e20, type: 3}
+  img3: {fileID: 2800000, guid: 6f71cc34525c503469f631930e4b634d, type: 3}
+  img4: {fileID: 2800000, guid: c365985a06caa7a47a7b4f4eedb7acb6, type: 3}
+  img5: {fileID: 2800000, guid: d2749a5b28005024a859f456a5152245, type: 3}
+  img6: {fileID: 2800000, guid: cef793f35f7895247ae5f672b6f6cf3a, type: 3}
+  img7: {fileID: 2800000, guid: d6c64a78a0ca29a4696b80e7ad37c82e, type: 3}
   holder: {fileID: 821421732}
+  mnuBtn: {fileID: 1038030572}
 --- !u!1 &1609948173
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,7 +2428,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -8.2486315, y: 37.29257}
-  m_SizeDelta: {x: 3040, y: 1440}
+  m_SizeDelta: {x: 2800.87, y: 997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1954819492
 MonoBehaviour:
@@ -2451,7 +2451,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 239
+    m_FontSize: 133
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
