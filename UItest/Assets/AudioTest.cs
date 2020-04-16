@@ -44,7 +44,7 @@ public class AudioTest : MonoBehaviour
 
             PlayNext(aSource, currentImg);
         }
-        print(currentImg);
+        //print(currentImg);
     }
 
     void PlayNext(AudioSource aS, Texture cI)
@@ -59,19 +59,22 @@ public class AudioTest : MonoBehaviour
                 {
                     holder.texture = img2;
                     currentImg = img2;
+                    aS.Play();
+                    canTouch = false;
                 }
                 else if (cI == img2)
                 {
                     holder.texture = img3;
                     currentImg = img3;
+                    aS.Play();
+                    canTouch = false;
                 }
                 else if (cI == img3)
                 {
-                    holder.texture = img;
-                    currentImg = img;
+                    holder.texture = null;
+                    currentImg = null;
                 }
-                aS.Play();
-                canTouch = false;
+                
                 
             }
             foreach (Touch touch in Input.touches)
@@ -85,19 +88,21 @@ public class AudioTest : MonoBehaviour
                     {
                         holder.texture = img2;
                         currentImg = img2;
+                        aS.Play();
+                        canTouch = false;
                     }
                     else if (cI == img2)
                     {
                         holder.texture = img3;
                         currentImg = img3;
+                        aS.Play();
+                        canTouch = false;
                     }
                     else if (cI == img3)
                     {
-                        holder.texture = img;
-                        currentImg = img;
+                        holder.texture = null;
+                        currentImg = null;
                     }
-                    canTouch = false;
-                    aS.Play();
                 }
             }
         }
