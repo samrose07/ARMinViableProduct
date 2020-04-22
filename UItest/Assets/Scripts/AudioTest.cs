@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
-
+using UnityEngine.SceneManagement;
 public class AudioTest : MonoBehaviour
 {
 
@@ -28,7 +28,8 @@ public class AudioTest : MonoBehaviour
     public RawImage holder;
     public GameObject mnuBtn;
     Texture currentImg;
-
+    public GameObject first;
+    public GameObject second;
     void Start()
     {
         //getting the audio component, playing first clip and changing text
@@ -125,7 +126,10 @@ public class AudioTest : MonoBehaviour
                     holder.texture = null;
                     currentImg = null;
                     txt.text = "Start Augmentation here!";
-                    mnuBtn.SetActive(true);
+                    //mnuBtn.SetActive(true);
+                    SceneManager.LoadScene(sceneName: "ARScene");
+                    SceneManager.UnloadSceneAsync(sceneName: "aud");
+                    
                 }               
             }
             //this is for the touches.
@@ -186,7 +190,10 @@ public class AudioTest : MonoBehaviour
                         holder.texture = null;
                         currentImg = null;
                         txt.text = "Start Augmentation here!";
-                        mnuBtn.SetActive(true);
+                        //mnuBtn.SetActive(true);
+                         SceneManager.LoadScene(sceneName:"ARScene");
+                        SceneManager.UnloadSceneAsync(sceneName: "aud");
+                       
                     }
                 }
             }

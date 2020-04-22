@@ -1,8 +1,8 @@
 Android
 PlayerPath?
-M:/GIMM/310/310project/UItest/theTest.apk
+M:/GIMM/310/310project/UItest/newWithAR.apk
 SceneListBegin?
-Assets/aud.unity
+Assets/scenes/ARScene.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 4b12dd839b2293f8457cd67cc3610b85 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -145,6 +145,18 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-b8c8b21dc59bfa5c0d87dc0b0a505708 Assembly-CSharp.dll:.AudioTest
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:GoogleARCore.InstantPreviewTrackedPoseDriver
+02f43a4f72590a32c46e9c76cd877fe1 Assembly-CSharp.dll:GoogleARCore.Examples.AugmentedImage.AugmentedImageExampleController
+844e217576ccd277c3102f6823157418 Assembly-CSharp.dll:GoogleARCore.ARCoreSessionConfig
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:GoogleARCore.CrossPlatform.XPAnchor
+4294352ce43e027e71b199587be57c74 Assembly-CSharp.dll:GoogleARCore.Examples.AugmentedImage.AugmentedImageVisualizer
+012c9f0ee0da4fb2810e062b9c80c92c Assembly-CSharp.dll:.AudioTest
+d0cd16eb3f8f448ff163a1635435cc1f Assembly-CSharp.dll:GoogleARCore.EnvironmentalLight
+3a1ddd4016c17db377ef996800e0a777 Assembly-CSharp.dll:GoogleARCore.ARCoreCameraConfigFilter
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:GoogleARCore.Anchor
+c2e29b917871d60546982006cc4a9a7e Assembly-CSharp.dll:GoogleARCore.ARCoreSession
+b47bb7f231b810f9e7f88c35299693be Assembly-CSharp.dll:GoogleARCore.AugmentedImageDatabase
+0352182229dc15ceae98dd2533712b4a Assembly-CSharp.dll:GoogleARCore.ARCoreBackgroundRenderer
 7bd8768b90b905d5b5541fe42addb342 Assembly-CSharp.dll:.MenuButtonClicked
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MenuScroller
+1144521d9ace1db6bcf4f8d31aa254f5 Assembly-CSharp.dll:.Visualizer
+6c6414f6927d30df732a7a7888e31ad5 Assembly-CSharp.dll:.Controller
