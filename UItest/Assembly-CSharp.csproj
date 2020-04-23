@@ -360,7 +360,7 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.39f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Google.Protobuf">
- <HintPath>C:/Users/mbrad/Documents/BackupGIMM/310/ARMinViableProduct-357f5cb5d755b0d474bcfbb6ed501218396fccda/UItest/Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
+ <HintPath>C:/Users/mbrad/Documents/GitHub/ARMinViableProduct/UItest/Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Users/mbrad/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>

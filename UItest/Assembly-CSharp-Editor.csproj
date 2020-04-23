@@ -288,19 +288,19 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.39f1/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Google.Protobuf">
- <HintPath>C:/Users/mbrad/Documents/BackupGIMM/310/ARMinViableProduct-357f5cb5d755b0d474bcfbb6ed501218396fccda/UItest/Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
+ <HintPath>C:/Users/mbrad/Documents/GitHub/ARMinViableProduct/UItest/Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
  </Reference>
  <Reference Include="Google.IOSResolver_v1.2.122.0">
- <HintPath>C:/Users/mbrad/Documents/BackupGIMM/310/ARMinViableProduct-357f5cb5d755b0d474bcfbb6ed501218396fccda/UItest/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.122.0.dll</HintPath>
+ <HintPath>C:/Users/mbrad/Documents/GitHub/ARMinViableProduct/UItest/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.122.0.dll</HintPath>
  </Reference>
  <Reference Include="Google.JarResolver_v1.2.122.0">
- <HintPath>C:/Users/mbrad/Documents/BackupGIMM/310/ARMinViableProduct-357f5cb5d755b0d474bcfbb6ed501218396fccda/UItest/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.122.0.dll</HintPath>
+ <HintPath>C:/Users/mbrad/Documents/GitHub/ARMinViableProduct/UItest/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.122.0.dll</HintPath>
  </Reference>
  <Reference Include="Google.VersionHandler">
- <HintPath>C:/Users/mbrad/Documents/BackupGIMM/310/ARMinViableProduct-357f5cb5d755b0d474bcfbb6ed501218396fccda/UItest/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+ <HintPath>C:/Users/mbrad/Documents/GitHub/ARMinViableProduct/UItest/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
  </Reference>
  <Reference Include="Google.VersionHandlerImpl_v1.2.122.0">
- <HintPath>C:/Users/mbrad/Documents/BackupGIMM/310/ARMinViableProduct-357f5cb5d755b0d474bcfbb6ed501218396fccda/UItest/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.122.0.dll</HintPath>
+ <HintPath>C:/Users/mbrad/Documents/GitHub/ARMinViableProduct/UItest/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.122.0.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/mbrad/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>

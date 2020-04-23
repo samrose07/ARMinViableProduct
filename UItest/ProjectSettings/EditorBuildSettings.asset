@@ -8,6 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scenes/aud.unity
     guid: ad548cce22a93fd47924537ef2706f59
-  - enabled: 0
+  - enabled: 1
     path: Assets/scenes/ARScene.unity
     guid: 39975e3c9a79d0d4f8bebd687a0669c7
