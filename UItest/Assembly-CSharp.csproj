@@ -191,6 +191,7 @@
      <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
      <Compile Include="Assets\Scripts\AudioTest.cs" />
      <Compile Include="Assets\Scripts\Controller.cs" />
+     <Compile Include="Assets\Scripts\HatMenuHandler.cs" />
      <Compile Include="Assets\Scripts\MenuButtonClicked.cs" />
      <Compile Include="Assets\Scripts\Visualizer.cs" />
      <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />

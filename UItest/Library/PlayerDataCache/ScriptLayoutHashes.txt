@@ -1,8 +1,7 @@
 Android
 PlayerPath?
-C:/Users/mbrad/Documents/BackupGIMM/310/AnotherTestBuild6.apk
+C:/Users/mbrad/Documents/BackupGIMM/310/AnotherTestBuild7.apk
 SceneListBegin?
-Assets/scenes/aud.unity
 Assets/scenes/ARScene.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
@@ -161,3 +160,4 @@ b47bb7f231b810f9e7f88c35299693be Assembly-CSharp.dll:GoogleARCore.AugmentedImage
 6c6414f6927d30df732a7a7888e31ad5 Assembly-CSharp.dll:.Controller
 3a1ddd4016c17db377ef996800e0a777 Assembly-CSharp.dll:GoogleARCore.ARCoreCameraConfigFilter
 012c9f0ee0da4fb2810e062b9c80c92c Assembly-CSharp.dll:.AudioTest
+3fb4f735d94bf25712181e8c7afb0052 Assembly-CSharp.dll:.HatMenuHandler
