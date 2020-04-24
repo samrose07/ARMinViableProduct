@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 using GoogleARCore;
@@ -58,7 +58,7 @@ public class Controller : MonoBehaviour {
                 Anchor anchor = image.CreateAnchor(image.CenterPose);
                 Vector3 anchorLoc = new Vector3(anchor.transform.position.x, anchor.transform.position.y, anchor.transform.position.z);
                 float camToMarkDist = Vector3.Distance(anchorLoc, Camera.main.transform.position);
-                distanceText.text = camToMarkDist.ToString();
+                distanceText.text = String.Format("{0:0.##}", camToMarkDist);
             }
 
 

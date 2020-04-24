@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/mbrad/Documents/BackupGIMM/310/AnotherTestBuild7.apk
+D:/Users/dargb/Documents/GitHub/ARMinViableProduct/UItest/test.apk
 SceneListBegin?
 Assets/scenes/ARScene.unity
 SceneListEnd?
