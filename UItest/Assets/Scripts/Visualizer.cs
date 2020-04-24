@@ -29,7 +29,7 @@ public class Visualizer : MonoBehaviour {
         }*/
         float width = Image.ExtentX /2;
         float height = Image.ExtentZ/2;
-        hat.transform.localPosition = Vector3.forward;
+        hat.transform.localPosition = Vector3.zero;
         hat.SetActive(true);
 
         visText.text = "ive arrived here.";
