@@ -11,7 +11,7 @@ public class Visualizer : MonoBehaviour {
     public Text visText;
     //use to place
     public GameObject hat;
-
+    
 
 	// Use this for initialization
 	void Start () {
@@ -30,9 +30,32 @@ public class Visualizer : MonoBehaviour {
         float width = Image.ExtentX /2;
         float height = Image.ExtentZ/2;
         hat.transform.localPosition = Vector3.zero;
-        hat.SetActive(true);
+        //hat.SetActive(true);
 
         visText.text = "ive arrived here.";
         
 	}
+    //if it gets passed the "true" then it turns it on. if not, turns off
+    public void SwitchOnOff(bool on)
+    {
+        if (on)
+        {
+            hat.SetActive(true);
+        }
+        if(!on)
+        {
+            hat.SetActive(false);
+        }
+    }
+    public bool CheckOn()
+    {
+        if(hat.activeInHierarchy)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
