@@ -17,9 +17,10 @@ public class HatMenuHandler : MonoBehaviour {
 	public Sprite sheriff;
 	public Sprite sombrero;
 	public Sprite wizard;
-	void Start () {
-		//Button btn = GetComponent<Button>();
-		//btn.onClick.AddListener(MenuClicked);
+	private Sprite currentHat;
+	void Awake () {
+		currentHat = helicopter;
+		hatObject.GetComponent<SpriteRenderer> ().sprite = currentHat;
 	}
 	
 	// Update is called once per frame
@@ -29,28 +30,32 @@ public class HatMenuHandler : MonoBehaviour {
 	}
 
 	public void SetCatInTheHat() {
-		hatObject.GetComponent<SpriteRenderer> ().sprite = catInTheHat;
+		currentHat = catInTheHat;
 	}
 	public void SetCrown() {
-		hatObject.GetComponent<SpriteRenderer> ().sprite = crown;
+		currentHat = crown;
 	}
 	public void SetHelicopter() {
-		hatObject.GetComponent<SpriteRenderer> ().sprite = helicopter;
+		currentHat = helicopter;
 	}
 	public void SetJoker() {
-		hatObject.GetComponent<SpriteRenderer> ().sprite = joker;
+		currentHat = joker;
 	}
 
 	public void SetPirate() {
-		hatObject.GetComponent<SpriteRenderer> ().sprite = pirate;
+		currentHat = pirate;
 	}
 	public void SetSheriff() {
-		hatObject.GetComponent<SpriteRenderer> ().sprite = sheriff;
+		currentHat = sheriff;
 	}
 	public void SetSombrero() {
-		hatObject.GetComponent<SpriteRenderer> ().sprite = sombrero;
+		currentHat = sombrero;
 	}
 	public void SetWizard() {
-		hatObject.GetComponent<SpriteRenderer> ().sprite = wizard;
+		currentHat = wizard;
+	}
+
+	void Update(){
+		hatObject.GetComponent<SpriteRenderer> ().sprite = currentHat;
 	}
 }
