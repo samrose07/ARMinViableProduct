@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/mbrad/Documents/builds/ARbuild3.apk
+D:/Users/dargb/Documents/GitHub/ARMinViableProduct/UItest/test.apk
 SceneListBegin?
 Assets/scenes/ARScene.unity
 SceneListEnd?
@@ -160,4 +160,4 @@ b47bb7f231b810f9e7f88c35299693be Assembly-CSharp.dll:GoogleARCore.AugmentedImage
 2d39edaf3eb18522d21b00ae34d1f62c Assembly-CSharp.dll:.Controller
 3a1ddd4016c17db377ef996800e0a777 Assembly-CSharp.dll:GoogleARCore.ARCoreCameraConfigFilter
 012c9f0ee0da4fb2810e062b9c80c92c Assembly-CSharp.dll:.AudioTest
-a2f8afe00ad5eebea4cbe23862a1022c Assembly-CSharp.dll:.HatMenuHandler
+37d0c01e9a70c24dc01203d3bcc3f653 Assembly-CSharp.dll:.HatMenuHandler

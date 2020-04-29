@@ -18,6 +18,8 @@ public class HatMenuHandler : MonoBehaviour {
 	public Sprite sombrero;
 	public Sprite wizard;
 	private Sprite currentHat;
+    public Controller controller;
+
 	void Awake () {
 		currentHat = helicopter;
 		hatObject.GetComponent<SpriteRenderer> ().sprite = currentHat;
@@ -31,6 +33,7 @@ public class HatMenuHandler : MonoBehaviour {
 
 	public void SetCatInTheHat() {
 		currentHat = catInTheHat;
+        
 	}
 	public void SetCrown() {
 		currentHat = crown;
@@ -57,5 +60,6 @@ public class HatMenuHandler : MonoBehaviour {
 
 	void Update(){
 		hatObject.GetComponent<SpriteRenderer> ().sprite = currentHat;
-	}
+        controller.updateSprite(currentHat);
+    }
 }

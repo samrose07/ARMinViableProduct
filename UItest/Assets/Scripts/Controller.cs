@@ -21,6 +21,7 @@ public class Controller : MonoBehaviour {
     public Button personalBtn;
     public Button publicBtn;
     public string currentSetting;
+    Visualizer vis = null;
     private void Awake()
     {
         Application.targetFrameRate = 60;
@@ -47,6 +48,10 @@ public class Controller : MonoBehaviour {
         settingText.text = currentSetting;
     }
 
+    public void updateSprite(Sprite sprite)
+    {
+        vis.GetComponent<SpriteRenderer>().sprite = sprite;
+    }
     // Update is called once per frame
     void Update () {
 
@@ -63,7 +68,7 @@ public class Controller : MonoBehaviour {
         //start tracking
         foreach(var image in augImages)
         {
-            Visualizer vis = null;
+            
             visualizers.TryGetValue(image.DatabaseIndex, out vis);
             if(image.TrackingState == TrackingState.Tracking && vis == null)
             {

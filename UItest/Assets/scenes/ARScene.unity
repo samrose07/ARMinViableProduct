@@ -431,7 +431,7 @@ MonoBehaviour:
   pointsText: {fileID: 1386458995}
   points: 0
   count: 0
-  hatMenu: {fileID: 0}
+  hatMenu: {fileID: 2143516829}
   socialBtn: {fileID: 889362790}
   personalBtn: {fileID: 667313120}
   publicBtn: {fileID: 1631449595}
@@ -3211,7 +3211,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -4145,3 +4145,4 @@ MonoBehaviour:
   sheriff: {fileID: 21300000, guid: fd9ccd16d06707c498703c9c2f7fdfdf, type: 3}
   sombrero: {fileID: 21300000, guid: 7654e911a47d2b34fac061cad70b82bf, type: 3}
   wizard: {fileID: 21300000, guid: 67b048a9c80b7354ca2c4233059eb494, type: 3}
+  controller: {fileID: 315816947}
