@@ -17,35 +17,22 @@ public class Controller : MonoBehaviour {
     public int points = 0;
     public int count = 0;
     public HatMenuHandler hatMenu;
-    public Button socialBtn;
-    public Button personalBtn;
-    public Button publicBtn;
-    public string currentSetting;
+    public Button strangerBtn;
+    public Button familyBtn;
+    public Button friendBtn;
+    public string currentSetting = "Friend";
+    public float camToMarkDist;
     Visualizer vis = null;
     private void Awake()
     {
         Application.targetFrameRate = 60;
-        socialBtn.onClick.AddListener(ChangeSetting2);
-        personalBtn.onClick.AddListener(ChangeSetting1);
-        publicBtn.onClick.AddListener(ChangeSetting3);
-    }
-    //set to personal space
-    void ChangeSetting1()
-    {
-        currentSetting = "Personal Space";
         settingText.text = currentSetting;
     }
-    //set to social space
-    void ChangeSetting2()
+    //set to current setting
+    public void SpaceSetting(string selectedSetting)
     {
-        currentSetting = "Social Space";
-        settingText.text = currentSetting;
-    }
-    //set to public space
-    void ChangeSetting3()
-    {
-        currentSetting = "Public Space";
-        settingText.text = currentSetting;
+        currentSetting = selectedSetting;
+        settingText.text = selectedSetting;
     }
 
     public void updateSprite(Sprite sprite)
@@ -88,7 +75,7 @@ public class Controller : MonoBehaviour {
             {
                 Anchor anchor = image.CreateAnchor(image.CenterPose);
                 Vector3 anchorLoc = new Vector3(anchor.transform.position.x, anchor.transform.position.y, anchor.transform.position.z);
-                float camToMarkDist = Vector3.Distance(anchorLoc, Camera.main.transform.position);
+                camToMarkDist = Vector3.Distance(anchorLoc, Camera.main.transform.position);
                 if(vis != null)
                 {
                     //based on https://sites.google.com/site/newmedianewtechnology2016/portfolios/matthijs-h/lab-3-private-space-visualizer
@@ -96,7 +83,7 @@ public class Controller : MonoBehaviour {
                     //the other spaces as well as a way to choose what you are testing
                     switch(currentSetting)
                     {
-                        case "Personal Space":
+                        case "Family":
                             if (camToMarkDist >= .45 && camToMarkDist < 1.2)
                             {
                                 // vis.SwitchOnOff(true);
@@ -115,7 +102,7 @@ public class Controller : MonoBehaviour {
                                 vis.SwitchOnOff(false);
                             }
                             break;
-                        case "Social Space":
+                        case "Friend":
                             if (camToMarkDist >= 1.2 && camToMarkDist < 3.7)
                             {
                                 // vis.SwitchOnOff(true);
@@ -134,7 +121,7 @@ public class Controller : MonoBehaviour {
                                 vis.SwitchOnOff(false);
                             }
                             break;
-                        case "Public Space":
+                        case "Stranger":
                             if (camToMarkDist >= 3.7 && camToMarkDist < 7.6)
                             {
                                 // vis.SwitchOnOff(true);
@@ -155,7 +142,7 @@ public class Controller : MonoBehaviour {
                             break;
                     }
                 }
-                distanceText.text = String.Format("{0:0.##}", camToMarkDist);
+                distanceText.text = "Current Distance: " + camToMarkDist.ToString("F2") + "m";
             }
 
 
