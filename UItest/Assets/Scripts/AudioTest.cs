@@ -127,8 +127,8 @@ public class AudioTest : MonoBehaviour
                     currentImg = null;
                     txt.text = "Start Augmentation here!";
                     //mnuBtn.SetActive(true);
-                    SceneManager.LoadScene(sceneName: "ARScene");
-                    SceneManager.UnloadSceneAsync(sceneName: "aud");
+                    SceneManager.LoadScene("ARScene");
+                    SceneManager.UnloadSceneAsync("aud");
                     
                 }               
             }
