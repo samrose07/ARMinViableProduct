@@ -1,4 +1,0 @@
-#Thu Apr 30 17:51:15 MDT 2020
-base.0=C\:\\Users\\dcbur\\Documents\\GitHub\\ARMinViableProduct\\UItest\\Temp\\gradleOut\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
-path.0=classes.dex
-renamed.0=classes.dex
