@@ -189,12 +189,12 @@
      <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPAnchor.cs" />
      <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPSession.cs" />
      <Compile Include="Assets\GoogleARCore\SDK\Scripts\XPTrackingState.cs" />
+     <Compile Include="Assets\HatButtonScript.cs" />
      <Compile Include="Assets\Scripts\AudioTest.cs" />
      <Compile Include="Assets\Scripts\Controller.cs" />
      <Compile Include="Assets\Scripts\HatMenuHandler.cs" />
      <Compile Include="Assets\Scripts\MenuButtonClicked.cs" />
      <Compile Include="Assets\Scripts\Visualizer.cs" />
-     <Compile Include="Assets\ShopHandler.cs" />
      <None Include="Assets\GoogleARCore\SDK\Materials\ARBackground.shader" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2017.4.39f1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>

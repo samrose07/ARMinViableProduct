@@ -157,8 +157,8 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 b47bb7f231b810f9e7f88c35299693be Assembly-CSharp.dll:GoogleARCore.AugmentedImageDatabase
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-b02e1c220e3b9b0fb683a91630ca910f Assembly-CSharp.dll:.Controller
+85ae12d0155adc2d8258084f33c759f1 Assembly-CSharp.dll:.Controller
 3a1ddd4016c17db377ef996800e0a777 Assembly-CSharp.dll:GoogleARCore.ARCoreCameraConfigFilter
 012c9f0ee0da4fb2810e062b9c80c92c Assembly-CSharp.dll:.AudioTest
-37d0c01e9a70c24dc01203d3bcc3f653 Assembly-CSharp.dll:.HatMenuHandler
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.ShopHandler
+c6b03d7a4d9a78eadc3e28413c975b8c Assembly-CSharp.dll:.HatMenuHandler
+50b05210dc677ca4cacb7c05731d5fb7 Assembly-CSharp.dll:.HatButtonScript

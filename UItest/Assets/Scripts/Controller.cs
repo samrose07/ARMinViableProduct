@@ -5,6 +5,8 @@ using GoogleARCore;
 using UnityEngine.UI;
 public class Controller : MonoBehaviour {
 
+    public static Controller Instance;
+
     public Visualizer visPrefab;
 
     public GameObject scanOverlay;
@@ -20,13 +22,19 @@ public class Controller : MonoBehaviour {
     public Button strangerBtn;
     public Button familyBtn;
     public Button friendBtn;
-    public string currentSetting = "Friend";
+    public string currentSetting;
     public float camToMarkDist;
+    public GameObject spaceButtons;
     Visualizer vis = null;
     private void Awake()
     {
+        if (!Instance)
+        {
+            Instance = this;
+        }
         Application.targetFrameRate = 60;
         settingText.text = currentSetting;
+        pointsText.text = "Points: " + points;
     }
     //set to current setting
     public void SpaceSetting(string selectedSetting)
@@ -35,9 +43,23 @@ public class Controller : MonoBehaviour {
         settingText.text = selectedSetting;
     }
 
-    public void updateSprite(Sprite sprite)
+    public void SelectedSpace(Button button)
     {
-        vis.GetComponent<SpriteRenderer>().sprite = sprite;
+        foreach (Transform child in spaceButtons.transform)
+        {
+            child.GetComponent<Button>().interactable = true;
+        }
+
+        button.interactable = false;
+    }
+
+        public void updateSprite(Sprite sprite)
+    {
+        if(vis)
+        {
+            vis.GetComponent<SpriteRenderer>().sprite = sprite;
+        }
+        
     }
     // Update is called once per frame
     void Update () {
@@ -142,7 +164,7 @@ public class Controller : MonoBehaviour {
                             break;
                     }
                 }
-                distanceText.text = "Current Distance: " + camToMarkDist.ToString("F2") + "m";
+                distanceText.text = "Distance: " + camToMarkDist.ToString("F2") + "m";
             }
 
 

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\dcbur\\Documents\\GitHub\\ARMinViableProduct\\UItest\\Temp\\gradleOut\\build\\intermediates\\res\\merged\\release\\layout___arcore_education.xml.flat",
+        "source": "C:\\Users\\dcbur\\.gradle\\caches\\transforms-2\\files-2.1\\1e7e4752077476d06aeb892e7b629b5c\\res\\layout\\__arcore_education.xml"
+    },
+    {
+        "merged": "C:\\Users\\dcbur\\Documents\\GitHub\\ARMinViableProduct\\UItest\\Temp\\gradleOut\\build\\intermediates\\res\\merged\\release\\drawable-xhdpi_app_banner.png.flat",
+        "source": "C:\\Users\\dcbur\\Documents\\GitHub\\ARMinViableProduct\\UItest\\Temp\\gradleOut\\src\\main\\res\\drawable-xhdpi\\app_banner.png"
+    },
+    {
+        "merged": "C:\\Users\\dcbur\\Documents\\GitHub\\ARMinViableProduct\\UItest\\Temp\\gradleOut\\build\\intermediates\\res\\merged\\release\\drawable-mdpi_app_icon.png.flat",
+        "source": "C:\\Users\\dcbur\\Documents\\GitHub\\ARMinViableProduct\\UItest\\Temp\\gradleOut\\src\\main\\res\\drawable-mdpi\\app_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\dcbur\\Documents\\GitHub\\ARMinViableProduct\\UItest\\Temp\\gradleOut\\build\\intermediates\\res\\merged\\release\\raw_keep_arcore.xml.flat",
+        "source": "C:\\Users\\dcbur\\.gradle\\caches\\transforms-2\\files-2.1\\1e7e4752077476d06aeb892e7b629b5c\\res\\raw\\keep_arcore.xml"
+    }
+]

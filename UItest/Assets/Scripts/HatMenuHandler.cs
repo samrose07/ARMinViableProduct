@@ -4,62 +4,83 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class HatMenuHandler : MonoBehaviour {
+public class HatMenuHandler : MonoBehaviour
+{
 
-	// Use this for initialization
-	public GameObject hatMenu;
-	public GameObject hatObject;
-	public Sprite catInTheHat;
-	public Sprite crown;
-	public Sprite helicopter;
-	public Sprite joker;
-	public Sprite pirate;
-	public Sprite sheriff;
-	public Sprite sombrero;
-	public Sprite wizard;
-	private Sprite currentHat;
+    // Use this for initialization
+    public GameObject hatMenu;
+    public GameObject hatButtons;
+    public GameObject hatObject;
+    public Sprite currentHat;
     public Controller controller;
+    public Color hatSelectedColor;
+    public Button selectedButton;
+    public Button purchaseButton;
 
-	void Awake () {
-		currentHat = helicopter;
-		hatObject.GetComponent<SpriteRenderer> ().sprite = currentHat;
-	}
-	
-	// Update is called once per frame
-	public void MenuClicked () {
-		if (!hatMenu.activeInHierarchy) hatMenu.SetActive(true);                         
+    void Awake()
+    {
+        hatObject.GetComponent<SpriteRenderer>().sprite = currentHat;
+    }
+
+    public void SelectedHat(Button button)
+    {
+        HatButtonScript script = button.GetComponent<HatButtonScript>();
+        if (script.purchased)
+        {
+            foreach (Transform child in hatButtons.transform)
+            {
+                child.GetComponent<Button>().interactable = true;
+            }
+
+            button.interactable = false;
+            currentHat = script.hat;
+        }
+        else
+        {
+            foreach (Transform child in hatButtons.transform)
+            {
+                child.GetComponent<HatButtonScript>().selected = false;
+                child.GetComponent<Image>().color = Color.white;
+            }
+
+            script.selected = true;
+            button.GetComponent<Image>().color = hatSelectedColor;
+            selectedButton = button;
+            purchaseButton.interactable = true;
+        }
+    }
+
+    public void PurchaseHat()
+    {
+        if (selectedButton)
+        {
+            HatButtonScript script = selectedButton.GetComponent<HatButtonScript>();
+
+            if (Controller.Instance.points >= script.price)
+            {
+                Controller.Instance.points -= script.price;
+                Controller.Instance.pointsText.text = "Points: " + Controller.Instance.points;
+
+                script.purchased = true;
+                script.selected = false;
+                selectedButton.GetComponent<Image>().color = Color.white;
+                SelectedHat(selectedButton);
+                selectedButton = null;
+                purchaseButton.interactable = false;
+            }
+        }
+    }
+
+    // Update is called once per frame
+    public void MenuClicked()
+    {
+        if (!hatMenu.activeInHierarchy) hatMenu.SetActive(true);
         else if (hatMenu.activeInHierarchy) hatMenu.SetActive(false);
-	}
+    }
 
-	public void SetCatInTheHat() {
-		currentHat = catInTheHat;
-        
-	}
-	public void SetCrown() {
-		currentHat = crown;
-	}
-	public void SetHelicopter() {
-		currentHat = helicopter;
-	}
-	public void SetJoker() {
-		currentHat = joker;
-	}
-
-	public void SetPirate() {
-		currentHat = pirate;
-	}
-	public void SetSheriff() {
-		currentHat = sheriff;
-	}
-	public void SetSombrero() {
-		currentHat = sombrero;
-	}
-	public void SetWizard() {
-		currentHat = wizard;
-	}
-
-	void Update(){
-		hatObject.GetComponent<SpriteRenderer> ().sprite = currentHat;
+    void Update()
+    {
+        hatObject.GetComponent<SpriteRenderer>().sprite = currentHat;
         controller.updateSprite(currentHat);
     }
 }
