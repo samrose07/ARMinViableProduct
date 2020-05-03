@@ -35,6 +35,7 @@ public class Controller : MonoBehaviour {
         Application.targetFrameRate = 60;
         settingText.text = currentSetting;
         pointsText.text = "Points: " + points;
+        distanceText.text = "Distance: ";
     }
     //set to current setting
     public void SpaceSetting(string selectedSetting)
@@ -106,8 +107,9 @@ public class Controller : MonoBehaviour {
                     switch(currentSetting)
                     {
                         case "Family":
-                            if (camToMarkDist >= .45 && camToMarkDist < 1.2)
+                            if (camToMarkDist >= .25 && camToMarkDist < .7)
                             {
+                                distanceText.text = "Distance: Perfect!";
                                 // vis.SwitchOnOff(true);
                                 count++;
                                 if (count >= 60)
@@ -119,14 +121,21 @@ public class Controller : MonoBehaviour {
                                 pointsText.text = "Points: " + points;
                                 vis.SwitchOnOff(true);
                             }
-                            else
+                            else if (camToMarkDist < .25)
                             {
+                                distanceText.text = "Distance: Too Close!";
+                                vis.SwitchOnOff(false);
+                            }
+                            else if (camToMarkDist > .7)
+                            {
+                                distanceText.text = "Distance: Too Far!";
                                 vis.SwitchOnOff(false);
                             }
                             break;
                         case "Friend":
-                            if (camToMarkDist >= 1.2 && camToMarkDist < 3.7)
+                            if (camToMarkDist >= .46 && camToMarkDist < 1.2)
                             {
+                                distanceText.text = "Distance: Perfect!";
                                 // vis.SwitchOnOff(true);
                                 count++;
                                 if (count >= 60)
@@ -138,14 +147,21 @@ public class Controller : MonoBehaviour {
                                 pointsText.text = "Points: " + points;
                                 vis.SwitchOnOff(true);
                             }
-                            else
+                            else if (camToMarkDist < .46)
                             {
+                                distanceText.text = "Distance: Too Close!";
+                                vis.SwitchOnOff(false);
+                            }
+                            else if (camToMarkDist > 1.2)
+                            {
+                                distanceText.text = "Distance: Too Far!";
                                 vis.SwitchOnOff(false);
                             }
                             break;
                         case "Stranger":
-                            if (camToMarkDist >= 3.7 && camToMarkDist < 7.6)
+                            if (camToMarkDist >= 1.2 && camToMarkDist < 2.4)
                             {
+                                distanceText.text = "Distance: Perfect!";
                                 // vis.SwitchOnOff(true);
                                 count++;
                                 if (count >= 60)
@@ -157,14 +173,20 @@ public class Controller : MonoBehaviour {
                                 pointsText.text = "Points: " + points;
                                 vis.SwitchOnOff(true);
                             }
-                            else
+                            else if (camToMarkDist < 1.2)
                             {
+                                distanceText.text = "Distance: Too Close!";
+                                vis.SwitchOnOff(false);
+                            }
+                            else if (camToMarkDist > 2.4)
+                            {
+                                distanceText.text = "Distance: Too Far!";
                                 vis.SwitchOnOff(false);
                             }
                             break;
                     }
                 }
-                distanceText.text = "Distance: " + camToMarkDist.ToString("F2") + "m";
+                //distanceText.text = "Distance: " + camToMarkDist.ToString("F2") + "m";
             }
 
 
