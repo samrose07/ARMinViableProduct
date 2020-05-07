@@ -11,7 +11,7 @@ public class HatButtonScript : MonoBehaviour {
     public Sprite hat;
     public Text priceText;
 
-    void Start ()
+    void Update ()
     {
         if (!purchased)
         {
