@@ -107,7 +107,7 @@ public class Controller : MonoBehaviour {
                     switch(currentSetting)
                     {
                         case "Family":
-                            if (camToMarkDist >= .25 && camToMarkDist < .7)
+                            if (camToMarkDist >= .25 && camToMarkDist < 1.2)
                             {
                                 distanceText.text = "Distance: Perfect!";
                                 // vis.SwitchOnOff(true);
@@ -126,7 +126,7 @@ public class Controller : MonoBehaviour {
                                 distanceText.text = "Distance: Too Close!";
                                 vis.SwitchOnOff(false);
                             }
-                            else if (camToMarkDist > .7)
+                            else if (camToMarkDist > 1.2)
                             {
                                 distanceText.text = "Distance: Too Far!";
                                 vis.SwitchOnOff(false);

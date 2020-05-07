@@ -579,7 +579,7 @@ MonoBehaviour:
   purchased: 0
   price: 250
   selected: 0
-  hat: {fileID: 21300000, guid: 7654e911a47d2b34fac061cad70b82bf, type: 3}
+  hat: {fileID: 21300000, guid: 2a3385ae40f05ea4aa13a765a4477b07, type: 3}
   priceText: {fileID: 1527277233}
 --- !u!1 &345398336
 GameObject:
@@ -635,7 +635,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: fd9ccd16d06707c498703c9c2f7fdfdf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f9f4ce201e83e3847b054c12a03aa4a9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -867,7 +867,7 @@ MonoBehaviour:
   purchased: 0
   price: 500
   selected: 0
-  hat: {fileID: 21300000, guid: b9df6b5bb1cdec243b36a3bcbf152b6c, type: 3}
+  hat: {fileID: 21300000, guid: ce7637d5c95660c49b697510029eabe5, type: 3}
   priceText: {fileID: 2026417926}
 --- !u!1 &571915658
 GameObject:
@@ -1001,7 +1001,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ba5b87d2fb563da4d8e41e17dadc0dc2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 265f13c2cd296ce4487d371ed076ac7a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1159,7 +1159,7 @@ MonoBehaviour:
   purchased: 0
   price: 750
   selected: 0
-  hat: {fileID: 21300000, guid: 713ebcc75907768488e108d23a053de1, type: 3}
+  hat: {fileID: 21300000, guid: 351e0b01be40ed6429f7fa76e83772b3, type: 3}
   priceText: {fileID: 571915660}
 --- !u!1 &612973329
 GameObject:
@@ -1507,7 +1507,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7654e911a47d2b34fac061cad70b82bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2a3385ae40f05ea4aa13a765a4477b07, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2048,7 +2048,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: b9df6b5bb1cdec243b36a3bcbf152b6c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ce7637d5c95660c49b697510029eabe5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2249,7 +2249,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 713ebcc75907768488e108d23a053de1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 351e0b01be40ed6429f7fa76e83772b3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2641,7 +2641,7 @@ MonoBehaviour:
   purchased: 0
   price: 100
   selected: 0
-  hat: {fileID: 21300000, guid: 1faec087ed8182e4d9c76e2168461f71, type: 3}
+  hat: {fileID: 21300000, guid: ece433851732ac4429e342c41746e01d, type: 3}
   priceText: {fileID: 1586392910}
 --- !u!1 &1239643130
 GameObject:
@@ -3082,7 +3082,7 @@ MonoBehaviour:
   purchased: 1
   price: 0
   selected: 0
-  hat: {fileID: 21300000, guid: fd9ccd16d06707c498703c9c2f7fdfdf, type: 3}
+  hat: {fileID: 21300000, guid: f9f4ce201e83e3847b054c12a03aa4a9, type: 3}
   priceText: {fileID: 1953387855}
 --- !u!1 &1421352688
 GameObject:
@@ -3228,7 +3228,7 @@ MonoBehaviour:
   purchased: 0
   price: 1000
   selected: 0
-  hat: {fileID: 21300000, guid: 67b048a9c80b7354ca2c4233059eb494, type: 3}
+  hat: {fileID: 21300000, guid: 0dbcd2c9526b06b42a920285024be48b, type: 3}
   priceText: {fileID: 2035255701}
 --- !u!1 &1426356187
 GameObject:
@@ -3374,7 +3374,7 @@ MonoBehaviour:
   purchased: 1
   price: 0
   selected: 0
-  hat: {fileID: 21300000, guid: ada50a66236c6fb4bbe06860b8b2894b, type: 3}
+  hat: {fileID: 21300000, guid: 36c4a3d529d86b24689275cce644941b, type: 3}
   priceText: {fileID: 1239643132}
 --- !u!1 &1503872535
 GameObject:
@@ -3430,7 +3430,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1faec087ed8182e4d9c76e2168461f71, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ece433851732ac4429e342c41746e01d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4157,7 +4157,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 67b048a9c80b7354ca2c4233059eb494, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0dbcd2c9526b06b42a920285024be48b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4892,7 +4892,7 @@ MonoBehaviour:
   purchased: 1
   price: 0
   selected: 0
-  hat: {fileID: 21300000, guid: ba5b87d2fb563da4d8e41e17dadc0dc2, type: 3}
+  hat: {fileID: 21300000, guid: 265f13c2cd296ce4487d371ed076ac7a, type: 3}
   priceText: {fileID: 1825269875}
 --- !u!1 &2035255699
 GameObject:
@@ -5026,7 +5026,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ada50a66236c6fb4bbe06860b8b2894b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36c4a3d529d86b24689275cce644941b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5083,7 +5083,7 @@ MonoBehaviour:
   hatMenu: {fileID: 1862356696}
   hatButtons: {fileID: 783794578}
   hatObject: {fileID: 1197848684257284, guid: 61a62e9333d48734eac6c2cad4f10e1a, type: 2}
-  currentHat: {fileID: 21300000, guid: ba5b87d2fb563da4d8e41e17dadc0dc2, type: 3}
+  currentHat: {fileID: 21300000, guid: 265f13c2cd296ce4487d371ed076ac7a, type: 3}
   controller: {fileID: 315816947}
   hatSelectedColor: {r: 1, g: 0.029411793, b: 0.029411793, a: 1}
   selectedButton: {fileID: 0}
